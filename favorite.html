@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet web</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<script src="script.js"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="favorite.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+<body>
+<header >
+<div class="user">
+    <img src="aziz%20(2).jpg" alt="">
+    <h3 class="name">abdelaziz hammemi</h3>
+    <p class="post">genie informatique</p>
+    </div>
+    <nav class="navbar">
+    <ul>
+    <li><a href="accuiel.html">home</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="education.html">education</a></li>
+    <li><a href="formation.html">formation</a></li>
+    <li><a href="favorite.html">favorite</a></li>
+    <li><a href="quiz.html">quiz</a></li>
+    <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    </header> 
+    <div id="menu" class="fas fa-bars"></div>
+     <section class="favorite" id="favorite">
+          <h1 class="h1"> activiter <spam> participe:</spam></h1>
+       <p>jes suis passionées par plusieurs domaines (sport,santer,sociaux...):</p>
+         <div class="r">
+      
+         
+    <p>-la peche:j'ai organisée une sortie de peche avec mes amis dans qazino et port sidi mansour</p>
+         <figure>
+      
+          <video src="peche.mp4" autoplay="autoplay" width="250" height="250" controls></video>
+        </figure>
+        </div>
+         
+  
+         <div class="r">
+    <p>-la musculation:j'ai participer la musculation dans un salle de sport avec mais amis</p>
+         <figure>
+        <img src="musci.jpg" width="250" height="220"/>
+        </figure>
+             </div>
+          <div class="r">
+    <p>-Theatre:chaque éte je suis aller  au theatre Sidi Mansour pour suiver  les spectacles theatrales ou autres </p>
+    <figure>
+        <img src="acteur.jpg" width="250" height="220"/>
+        
+        </figure>
+             </div>
+    </section>
+     <script>
+var textWrapper = document.querySelector('.h1');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.h1 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.h1',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  }); 
+    </script>
+<style>
+    .favorite .h1{
+font-size: 4rem;
+padding-bottom: 1rem;
+color:white;
+text-transform: uppercase;
+}
+.favorite .h1 spam{
+font-size: 4rem;
+padding-bottom: 1rem;
+color:yellow;
+text-transform: uppercase;
+}
+    </style>
+
+    </body></html>

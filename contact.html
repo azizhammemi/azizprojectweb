@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet web</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<script src="script.js"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="contacat.css">
+
+</head>
+<body>
+<header >
+<div class="user">
+    <img src="aziz%20(2).jpg" alt="">
+    <h3 class="name">abdelaziz hammemi</h3>
+    <p class="post">genie informatique</p>
+    </div>
+    <nav class="navbar">
+    <ul>
+    <li><a href="accuiel.html">home</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="education.html">education</a></li>
+    <li><a href="formation.html">formation</a></li>
+    <li><a href="favorite.html">favorite</a></li>
+    <li><a href="quiz.html">quiz</a></li>
+    <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    </header> 
+    <div id="menu" class="fas fa-bars"></div>
+    <section class="contact" id="contact">
+
+<h1 class="heading"> <span>contact</span> me </h1>
+
+<div class="row">
+
+    <div class="content">
+
+        <h3 class="title">contact info</h3>
+
+        <div class="info">
+            <h3> <i class="fas fa-envelope"></i> hammemmiabdelaziz@gmail.com </h3>
+            <h3> <i class="fas fa-phone"></i> +21625897794 </h3>
+            <h3> <i class="fas fa-map-marker-alt"></i>sfax-route lafran km1.5 </h3>
+        </div>
+
+    </div>
+
+    <form action="">
+
+        <input type="text" placeholder="nom" class="box" id="name">
+        <input type="email" placeholder="email" class="box" id="mail">
+        <input type="text" placeholder="télephone" class="box" id="project">
+        <textarea  cols="30" rows="10" class="box message" placeholder="message" id="box"></textarea>
+        <button type="submit" class="btn" id="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+    </form>
+
+</div>
+
+</section>
+        <script>
+
+ document.getElementById("btn").onclick = function(){
+
+            var My_Message = document.getElementById("name").value;
+            var mail = document.getElementById("mail").value;
+            var project = document.getElementById("project").value;
+            var box = document.getElementById("box").value;
+
+alert('Salut, '+ My_Message+'\n votre mail: '+ mail+'\n votre telephone: '+project+'\n votre choisi: '+box);
+
+        }
+
+   </script>
+    </body>
+</html>

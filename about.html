@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet web</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<script src="script.js"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="about.css">
+
+</head>
+<body>
+<header >
+<div class="user">
+    <img src="aziz%20(2).jpg" alt="">
+    <h3 class="name">abdelaziz hammemi</h3>
+    <p class="post">genie informatique</p>
+    </div>
+    <nav class="navbar">
+    <ul>
+    <li><a href="accuiel.html">home</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="education.html">education</a></li>
+    <li><a href="formation.html">formation</a></li>
+    <li><a href="favorite.html">favorite</a></li>
+    <li><a href="quiz.html">quiz</a></li>
+    <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    </header> 
+    <div id="menu" class="fas fa-bars"></div>
+<section class="about" id="about">
+  <h1 class="h1">about <spam>me</spam></h1>  
+<div class="row-1">
+    <div class="image">
+    <img src="aziz4.jpg" alt="">
+    </div>
+<div class="content">
+    <div class="box-container">
+    <div class="box">
+        <p><span>age: </span>23</p>
+        <p><span>sexe: </span>male</p>
+        <p><span>language: </span>arabe,francais,anglais</p>
+        <p><span>projet: </span>projet informatique</p>
+    </div>
+     <div class="box">
+        <p><span>niveau: </span>etaidiant</p>
+        <p><span>telephone: </span>+21625897794</p>
+        <p><span>email:</span>hammemmiabdelaziz@gmail.com</p>
+        <p><span>pays: </span>tunisia</p>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </section >
+<section class="about" >
+<h1 class="h1">les  <spam>compétences</spam></h1>
+<div class="row-2">
+<div class="skills">
+    <div class="progress">
+    <h3> web development et graphique desgin:<span>50%</span></h3>
+    <p>html,css,js,php,reactjs,adobe pohto shop</p>
+<div class="bar"><span></span></div>
+    <h3> algorithmique :<span>50%</span></h3>
+            <p>c,c++,c#,python,java,JEE,SOAP,vhdl,shell,nc</p>
+    <div class="bar"><span></span></div>
+    <h3> systeme embarqués et reseaux:<span>50%</span></h3>
+        <p>arduino,ESP,stm32,Linkit samrat7866,Rasbarry PI, Capteur Sans Fil (RCSF),Cisco paket tracer</p>
+    <div class="bar"><span></span></div>
+    <h3> android et game devlopment:<span>50%</span></h3>
+        <p>je uitilise le logicielle unity et android studio</p>
+    <div class="bar"><span></span></div>
+
+    </div>
+    </div>  
+<div class="box-container">
+    <div class="box">
+    <h3>>>3+</h3>
+    <p>month of experience  <p>
+    </div>
+    <div class="box">
+    <h3>>>1+</h3>
+    <p>client happy  <p>
+    </div>
+   
+    </div>
+</div>
+    <h1 class="h1">la  <spam>localisation</spam></h1>
+         <div class="ma">
+     <div id="map"></div>
+                    <style>
+                        #map{
+                        height: 400px;
+                        width: 70%;
+                        }
+                        .ma{
+                        padding-left: 25%;
+                        }
+                    </style>
+            
+                    <script>
+ function initMap(){
+ var options={
+ zoom:14,
+    center:{lat:34.7503255,lng:10.7441129}
+ }
+ var map=new
+ google.maps.Map(document.getElementById('map'),options);
+ 
+                         var map=new google.maps.Marker({
+                         position:{lat:34.7503255,lng:10.7441129},
+                            map:map
+                         });
+                        }
+
+                    </script>
+                   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp8gO61Gx6JSL-soxcVUTbYBgrh1zyPDA&callback=initMap"> </script>  </div>
+</section>
+
+</body>
+</html>

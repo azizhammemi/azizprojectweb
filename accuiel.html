@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet web</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<script src="script.js"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+
+<body>
+
+<header >
+<div class="user">
+    <img src="aziz%20(2).jpg" alt="">
+    <h3 class="name">abdelaziz hammemi</h3>
+    <p class="post">genie informatique</p>
+    </div>
+    <nav class="navbar">
+    <ul>
+   <li><a href="accuiel.html">home</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="education.html">education</a></li>
+    <li><a href="formation.html">formation</a></li>
+    <li><a href="favorite.html">favorite</a></li>
+    <li><a href="quiz.html">quiz</a></li>
+    <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    </header> 
+<div id="menu" class="fas fa-bars"></div>
+    <section class="home" id="home">
+    <h3>Salut a tous !</h3>
+    <h1 class="ml6">
+  <span class="text-wrapper">
+    <span class="letters">Je m'apelle abdelaziz hammemi</span>
+  </span>
+</h1>
+ <p>J'ai créé ce site pour me présenter ainsi que les études et experiences que j'ai prises dans ma vie,et si vous aimez le contenu,vous pouvez envoyer un message en contact.
+    </p>
+    <a href="about.html"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+ <div class="wrapper">
+      <div class="icon facebook">
+        <div class="tooltip">Facebook</div>
+        <a href="https://www.facebook.com/abdelaziz.hammemi"><span><i class="fab fa-facebook-f"></i></span></a>
+      </div>
+
+      <div class="icon twitter">
+        <div class="tooltip">Twitter</div>
+        <span><i class="fab fa-twitter"></i></span>
+      </div>
+
+      <div class="icon instagram">
+        <div class="tooltip">Instagram</div>
+       <a href="https://www.instagram.com/abdelaziz.hammemi/"> <span><i class="fab fa-instagram"></i></span></a>
+      </div>
+
+      <div class="icon github">
+        <div class="tooltip">Github</div>
+        <span><i class="fab fa-github"></i></span>
+      </div>
+
+      <div class="icon youtube">
+        <div class="tooltip">Youtube</div>
+       <a href="https://www.youtube.com/channel/UCtZ3_gL58MbUmVteYwAH8gA"> <span><i class="fab fa-youtube"></i></a></a></span>
+      </div>
+    </div>
+    <script>
+    var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+    </script>
+</body>
+</html>
