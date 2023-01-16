@@ -70,7 +70,9 @@
             var mail = document.getElementById("mail").value;
             var project = document.getElementById("project").value;
             var box = document.getElementById("box").value;
-
+if( My_Message==""|| mail=="" || project="" || box==""){
+return alert("champs vide");
+}
 alert('Salut, '+ My_Message+'\n votre mail: '+ mail+'\n votre telephone: '+project+'\n votre choisi: '+box);
 
         }
